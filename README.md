@@ -5,12 +5,17 @@
 Company site for Anagum AI, served at https://www.anagumai.com.
 
 Static multi-page site: `index.html`, `about.html`, `contact.html`,
-`ai-automations.html`, `ai-agents.html`, compiled `styles.css`,
-`favicon.ico`, `apple-touch-icon.png`, `robots.txt`, `sitemap.xml`,
-`images/`. No JavaScript, no
-form. Photos other than the logo are by Annie Spratt and Sigmund via
-Unsplash. Every page shares the same header nav and footer; keep them in
-sync when editing.
+`careers.html`, `ai-automations.html`, `ai-agents.html`, compiled
+`styles.css`, `apply.js`, `favicon.ico`, `apple-touch-icon.png`,
+`robots.txt`, `sitemap.xml`, `images/`. No form backend. Photos other
+than the logo are by Annie Spratt and Sigmund via Unsplash. Every page
+shares the same header nav and footer; keep them in sync when editing.
+
+Job applications on `careers.html` are composed into a `mailto:` link by
+`apply.js` (vanilla JS, no dependencies): the applicant's mail app opens
+with the fields filled in and they attach their resume before sending to
+`careers@anagumai.com`. Keep the script free of inline handlers so it
+stays within the enforcing Content-Security-Policy.
 
 Styling is Tailwind CSS plus daisyUI with one bespoke `anagum` theme,
 compiled at author time and committed, so the deployed site stays plain
