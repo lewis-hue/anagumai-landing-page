@@ -1,0 +1,14 @@
+{
+  "name": "anagumai-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anagum AI company site (www.anagumai.com). Static HTML plus Tailwind/daisyUI CSS compiled at author time.",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "daisyui": "5.8.2",
+    "tailwindcss": "4.3.5"
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="anagum">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,166 +17,201 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-neutral focus:text-neutral-content focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#top" aria-label="Anagum AI home">
-        <svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-          <rect x="2" y="2" width="28" height="28" rx="6" fill="#0c4f5c"/>
-          <circle cx="16" cy="16" r="7" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-          <circle cx="16" cy="16" r="2.4" fill="#e0a81c"/>
-        </svg>
-        <span class="brand-name">Anagum AI</span>
-      </a>
-      <nav class="nav" aria-label="Sections">
-        <a href="#services">Services</a>
-        <a href="#product">Research tool</a>
-        <a href="#process">How we work</a>
-        <a href="#about">About</a>
-        <a class="button button-small" href="mailto:lewis@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact</a>
-      </nav>
-    </div>
+  <header class="sticky top-0 z-40 bg-base-100 border-b border-base-300">
+    <nav class="navbar max-w-6xl mx-auto px-6" aria-label="Sections">
+      <div class="navbar-start">
+        <div class="dropdown md:hidden">
+          <button tabindex="0" class="btn btn-ghost btn-square" aria-label="Open menu">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
+          </button>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 border border-base-300">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#product">Research tool</a></li>
+            <li><a href="#process">How we work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="#top" class="text-xl font-extrabold tracking-tight">Anagum AI</a>
+      </div>
+      <div class="navbar-center hidden md:flex">
+        <ul class="menu menu-horizontal px-1 font-medium">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#product">Research tool</a></li>
+          <li><a href="#process">How we work</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-primary btn-sm" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact sales</a>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1>Software built around your business.</h1>
-          <p class="lede">Anagum AI designs and builds software solutions for companies and other clients — from internal tools to customer-facing products, delivered and supported in production.</p>
-          <div class="actions">
-            <a class="button" href="mailto:lewis@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Start a project</a>
-            <a class="button button-ghost" href="https://app.anagumai.com" rel="noopener">Open the research tool</a>
+    <section class="border-b border-base-300" id="top">
+      <div class="hero max-w-6xl mx-auto px-6 py-16 lg:py-24">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-12 p-0 w-full">
+          <img src="/images/team.jpg" alt="Developers working together around a table with laptops" width="1600" height="1067" class="w-full lg:max-w-md rounded-box shadow-lg" fetchpriority="high">
+          <div class="w-full">
+            <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-balance">Software built around your business.</h1>
+            <p class="py-6 text-lg text-base-content/70 max-w-xl">Anagum AI designs and builds software for companies and other clients. Internal tools, customer products, and AI added to systems you already run.</p>
+            <div class="flex flex-wrap gap-3">
+              <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Talk to sales</a>
+              <a class="btn btn-ghost border border-base-300" href="https://app.anagumai.com" rel="noopener">Open the research tool</a>
+            </div>
+            <p class="pt-6 text-sm text-base-content/60">We run our own research platform in production at <a class="link link-primary" href="https://app.anagumai.com" rel="noopener">app.anagumai.com</a>.</p>
           </div>
-          <p class="proof">Built and operated by the team behind <a href="https://app.anagumai.com" rel="noopener">app.anagumai.com</a>, our research platform.</p>
-        </div>
-        <div class="hero-figure" aria-hidden="true">
-          <svg viewBox="0 0 320 260" width="320" height="260" role="img">
-            <rect x="8" y="8" width="304" height="244" rx="14" fill="#0c4f5c"/>
-            <rect x="8" y="8" width="304" height="44" rx="14" fill="#093c46"/>
-            <rect x="8" y="38" width="304" height="14" fill="#093c46"/>
-            <circle cx="30" cy="30" r="5" fill="#e0a81c"/>
-            <circle cx="46" cy="30" r="5" fill="#3d7c88"/>
-            <circle cx="62" cy="30" r="5" fill="#3d7c88"/>
-            <rect x="30" y="76" width="150" height="14" rx="7" fill="#ffffff"/>
-            <rect x="30" y="102" width="230" height="10" rx="5" fill="#7fa8b1"/>
-            <rect x="30" y="122" width="205" height="10" rx="5" fill="#7fa8b1"/>
-            <rect x="30" y="154" width="120" height="34" rx="8" fill="#e0a81c"/>
-            <rect x="162" y="154" width="120" height="34" rx="8" fill="none" stroke="#ffffff" stroke-width="2"/>
-            <circle cx="256" cy="216" r="26" fill="none" stroke="#ffffff" stroke-width="3"/>
-            <circle cx="256" cy="216" r="6" fill="#e0a81c"/>
-          </svg>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
-      <div class="wrap">
-        <h2>Services</h2>
-        <p class="section-lede">Pragmatic engineering for teams that need software to work in production, not just in a demo.</p>
-        <div class="service-rows">
-          <article class="service">
-            <h3>Custom software development</h3>
-            <p>Web applications, APIs and internal tools designed around how your team actually works, built to be operated and extended.</p>
-          </article>
-          <article class="service">
-            <h3>AI integration</h3>
-            <p>Practical AI capabilities — search, extraction, assistants — added to new systems or your existing software, with measurable behaviour.</p>
-          </article>
-          <article class="service">
-            <h3>Product engineering</h3>
-            <p>From prototype to production: architecture, delivery and iteration, with the deployment and data plumbing handled properly.</p>
-          </article>
-          <article class="service">
-            <h3>Care and improvement</h3>
-            <p>Monitoring, fixes and steady improvements for software you already rely on, so it keeps up with your business.</p>
-          </article>
+    <section class="border-b border-base-300" id="services">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <h2 class="text-3xl font-bold tracking-tight">Services</h2>
+        <p class="pt-3 pb-10 text-lg text-base-content/70 max-w-2xl">Engineering for teams that need software to work in production.</p>
+        <div class="grid gap-10 lg:grid-cols-5 items-start">
+          <img src="/images/developers.jpg" alt="Two developers reviewing code on a monitor" width="1600" height="1067" loading="lazy" class="w-full rounded-box shadow-lg lg:col-span-2">
+          <div class="grid gap-5 sm:grid-cols-2 lg:col-span-3">
+            <article class="card bg-base-100 border border-base-300">
+              <div class="card-body">
+                <h3 class="card-title text-lg">Custom software development</h3>
+                <p class="text-base-content/70">Web applications, APIs and internal tools, designed around how your team works and built to be operated and extended.</p>
+              </div>
+            </article>
+            <article class="card bg-base-100 border border-base-300">
+              <div class="card-body">
+                <h3 class="card-title text-lg">AI integration</h3>
+                <p class="text-base-content/70">Search, extraction and assistants added to new systems or your existing software, with behaviour you can measure.</p>
+              </div>
+            </article>
+            <article class="card bg-base-100 border border-base-300">
+              <div class="card-body">
+                <h3 class="card-title text-lg">Product engineering</h3>
+                <p class="text-base-content/70">From prototype to production. Architecture, delivery and iteration, with deployment and data handled properly.</p>
+              </div>
+            </article>
+            <article class="card bg-base-100 border border-base-300">
+              <div class="card-body">
+                <h3 class="card-title text-lg">Care and improvement</h3>
+                <p class="text-base-content/70">Monitoring, fixes and steady improvements for software you already rely on.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="product" id="product">
-      <div class="wrap product-grid">
+    <section class="bg-primary text-primary-content" id="product">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20 grid gap-10 lg:grid-cols-2 items-center">
         <div>
-          <h2>Our research tool</h2>
-          <p>We build the software we sell. Our research platform investigates, collects and analyses evidence at scale — the same platform we run for our own work is available to use now.</p>
-          <ul class="ticks">
-            <li>Structured research collection and analysis</li>
-            <li>Built for evidence handling, not chat demos</li>
-            <li>Operated in production by our own team</li>
+          <h2 class="text-3xl font-bold tracking-tight">Our research tool</h2>
+          <p class="py-5 text-primary-content/80 text-lg max-w-xl">We build the software we sell. Our research platform collects and analyses evidence at scale. We run it for our own work, and it is available to use now.</p>
+          <ul class="divide-y divide-primary-content/20 border-y border-primary-content/20 max-w-xl">
+            <li class="py-3">Structured research collection and analysis</li>
+            <li class="py-3">Built for evidence handling</li>
+            <li class="py-3">Operated in production by our team</li>
           </ul>
-          <p><a class="product-link" href="https://app.anagumai.com" rel="noopener">Open app.anagumai.com</a></p>
+          <div class="pt-7">
+            <a class="btn btn-accent" href="https://app.anagumai.com" rel="noopener">Open app.anagumai.com</a>
+          </div>
         </div>
-        <dl class="facts">
-          <div>
-            <dt>Status</dt>
-            <dd>Live in production</dd>
-          </div>
-          <div>
-            <dt>Address</dt>
-            <dd>app.anagumai.com</dd>
-          </div>
-          <div>
-            <dt>Built by</dt>
-            <dd>Anagum AI</dd>
-          </div>
-        </dl>
+        <div class="grid gap-5">
+          <img src="/images/meeting.jpg" alt="Team meeting around a table in an office" width="1600" height="1096" loading="lazy" class="w-full rounded-box shadow-lg">
+          <dl class="card bg-primary-content/10 border border-primary-content/20">
+            <div class="card-body p-5 grid grid-cols-3 gap-4 text-sm">
+              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Status</dt><dd class="font-semibold pt-1">Live in production</dd></div>
+              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Address</dt><dd class="font-semibold pt-1">app.anagumai.com</dd></div>
+              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Built by</dt><dd class="font-semibold pt-1">Anagum AI</dd></div>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="process">
-      <div class="wrap">
-        <h2>How we work</h2>
-        <ol class="steps">
-          <li>
-            <span class="step-no" aria-hidden="true">1</span>
-            <div>
-              <h3>Talk</h3>
-              <p>Tell us what you need and what it must do. We scope the work honestly and say plainly if we are not the right fit.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-no" aria-hidden="true">2</span>
-            <div>
-              <h3>Build</h3>
-              <p>We design and build in short iterations you can see and test, against the production environment from the start.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-no" aria-hidden="true">3</span>
-            <div>
-              <h3>Run</h3>
-              <p>We deploy, monitor and keep improving the system, and hand over the knowledge your team needs to own it.</p>
-            </div>
-          </li>
+    <section class="border-b border-base-300" id="process">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <h2 class="text-3xl font-bold tracking-tight pb-10">How we work</h2>
+        <ol class="steps steps-vertical md:steps-horizontal w-full">
+          <li class="step step-primary font-semibold">Talk</li>
+          <li class="step step-primary font-semibold">Build</li>
+          <li class="step step-primary font-semibold">Run</li>
         </ol>
+        <div class="grid gap-8 md:grid-cols-3 pt-8">
+          <div>
+            <h3 class="font-bold text-lg">Talk</h3>
+            <p class="pt-2 text-base-content/70">Tell us what you need and what it must do. We scope the work honestly. If we are not the right fit, we say so.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Build</h3>
+            <p class="pt-2 text-base-content/70">We design and build in short iterations you can see and test, against the production environment from the start.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Run</h3>
+            <p class="pt-2 text-base-content/70">We deploy, monitor and keep improving the system, and hand over what your team needs to own it.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="wrap narrow">
-        <h2>About</h2>
-        <p>Anagum AI is a software company. We help companies and other clients get working software: custom builds, AI capabilities added to existing systems, and long-term care for software in production. Our own research platform at <a href="https://app.anagumai.com" rel="noopener">app.anagumai.com</a> is the clearest example of how we build.</p>
+    <section class="border-b border-base-300" id="about">
+      <div class="max-w-3xl mx-auto px-6 py-16 lg:py-20">
+        <h2 class="text-3xl font-bold tracking-tight">About</h2>
+        <p class="pt-4 text-lg text-base-content/80">Anagum AI is a software company. We help companies and other clients get working software: custom builds, AI added to existing systems, and long term care for software in production. Our research platform at <a class="link link-primary" href="https://app.anagumai.com" rel="noopener">app.anagumai.com</a> shows how we build.</p>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="wrap narrow">
-        <h2>Contact</h2>
-        <p>Tell us about your project. Email <a href="mailto:lewis@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">lewis@anagumai.com</a> and we will reply with next steps.</p>
-        <p><a class="button" href="mailto:lewis@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Email lewis@anagumai.com</a></p>
+    <section class="bg-base-200" id="contact">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+        <div class="grid gap-5 md:grid-cols-2 pt-8">
+          <article class="card bg-base-100 border border-base-300">
+            <div class="card-body">
+              <h3 class="card-title">New project</h3>
+              <p class="text-base-content/70">Starting something new? Tell us about it.</p>
+              <div class="card-actions pt-2">
+                <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Email sales@anagumai.com</a>
+              </div>
+            </div>
+          </article>
+          <article class="card bg-base-100 border border-base-300">
+            <div class="card-body">
+              <h3 class="card-title">Support</h3>
+              <p class="text-base-content/70">Already working with us, or need help with the research tool?</p>
+              <div class="card-actions pt-2">
+                <a class="btn btn-outline" href="mailto:support@anagumai.com?subject=Support%20request%20for%20Anagum%20AI">Email support@anagumai.com</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
+  <footer class="footer bg-neutral text-neutral-content p-10 max-w-none">
+    <div class="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-3 w-full">
+      <nav class="grid gap-2 content-start justify-items-start">
+        <h3 class="footer-title">Anagum AI</h3>
+        <p class="text-sm text-neutral-content/70 max-w-xs">Custom software for companies. Makers of the research platform at app.anagumai.com.</p>
+      </nav>
+      <nav class="grid gap-2 content-start justify-items-start">
+        <h3 class="footer-title">Sections</h3>
+        <a class="link link-hover" href="#services">Services</a>
+        <a class="link link-hover" href="#product">Research tool</a>
+        <a class="link link-hover" href="#process">How we work</a>
+        <a class="link link-hover" href="#about">About</a>
+      </nav>
+      <nav class="grid gap-2 content-start justify-items-start">
+        <h3 class="footer-title">Contact</h3>
+        <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
+        <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
+      </nav>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 w-full flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60 border-t border-neutral-content/20 pt-6">
       <span>© 2026 Anagum AI</span>
-      <span class="footer-links">
-        <a href="https://app.anagumai.com" rel="noopener">Research tool</a>
-        <a href="mailto:lewis@anagumai.com">lewis@anagumai.com</a>
-      </span>
+      <span>Photos: Annie Spratt and Sigmund via Unsplash</span>
     </div>
   </footer>
 </body>

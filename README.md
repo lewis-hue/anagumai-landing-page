@@ -2,8 +2,19 @@
 
 Company site for Anagum AI, served at https://www.anagumai.com.
 
-Static single page: `index.html`, `styles.css`, `favicon.svg`, `robots.txt`.
-No JavaScript, no form, no build step.
+Static single page: `index.html`, compiled `styles.css`, `favicon.svg`,
+`robots.txt`, `images/`. No JavaScript, no form.
+
+Styling is Tailwind CSS plus daisyUI with one bespoke `anagum` theme,
+compiled at author time and committed, so the deployed site stays plain
+static files:
+
+```sh
+npm install
+npm run build   # src/input.css -> styles.css
+```
+
+Pinned versions: see `package.json` devDependencies.
 
 ## Preview
 
