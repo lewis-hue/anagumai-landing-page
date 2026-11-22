@@ -1,5 +1,7 @@
 # Anagum AI landing page
 
+![Anagum AI logo](images/logo.jpg)
+
 Company site for Anagum AI, served at https://www.anagumai.com.
 
 Static single page: `index.html`, compiled `styles.css`, `favicon.svg`,
