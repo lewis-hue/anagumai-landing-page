@@ -11,11 +11,15 @@ Static multi-page site: `index.html`, `about.html`, `contact.html`,
 than the logo are by Annie Spratt and Sigmund via Unsplash. Every page
 shares the same header nav and footer; keep them in sync when editing.
 
-Job applications on `careers.html` are composed into a `mailto:` link by
-`apply.js` (vanilla JS, no dependencies): the applicant's mail app opens
-with the fields filled in and they attach their resume before sending to
-`careers@anagumai.com`. Keep the script free of inline handlers so it
-stays within the enforcing Content-Security-Policy.
+Job applications on `careers.html` are submitted by `apply.js` (vanilla
+JS, no dependencies) to a Basin form endpoint set in the form's
+`data-endpoint` attribute, resume file included. Basin notifies
+`careers@anagumai.com`; see its dashboard for the free-plan limits. To
+connect a new endpoint, create the form at usebasin.com (one endpoint is
+free), paste its URL over the `REPLACE-WITH-YOUR-FORM-ID` placeholder,
+rebuild and deploy. Keep the script free of inline handlers so it stays
+within the enforcing Content-Security-Policy, whose `connect-src` must
+keep allowing `https://usebasin.com` (see `Caddyfile` in `the-eye`).
 
 Styling is Tailwind CSS plus daisyUI with one bespoke `anagum` theme,
 compiled at author time and committed, so the deployed site stays plain
