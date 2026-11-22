@@ -39,7 +39,7 @@
         </div>
         <a href="#top" class="flex items-center gap-2.5" aria-label="Anagum AI home">
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-9 w-9 rounded-lg object-cover">
-          <span class="text-xl font-extrabold tracking-tight">Anagum AI</span>
+          <span class="text-xl font-extrabold tracking-tight whitespace-nowrap">Anagum AI</span>
         </a>
       </div>
       <div class="navbar-center hidden md:flex">
@@ -51,7 +51,7 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn btn-primary btn-sm" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact sales</a>
+        <a class="btn btn-primary btn-sm hidden sm:inline-flex" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact sales</a>
       </div>
     </nav>
   </header>
@@ -59,16 +59,17 @@
   <main id="main">
     <section class="border-b border-base-300" id="top">
       <div class="hero max-w-6xl mx-auto px-6 py-16 lg:py-24">
-        <div class="hero-content flex-col lg:flex-row-reverse gap-12 p-0 w-full">
-          <img src="/images/team.jpg" alt="Developers working together around a table with laptops" width="1600" height="1067" class="w-full lg:max-w-md rounded-box shadow-lg" fetchpriority="high">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-8 lg:gap-12 p-0 w-full">
+          <img src="/images/team.jpg" alt="Diverse team in discussion around a conference table" width="1600" height="1067" class="w-full lg:max-w-md rounded-box shadow-lg order-1 lg:order-first" fetchpriority="high">
           <div class="w-full">
-            <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-balance">An AI agency that builds solutions.</h1>
-            <p class="py-6 text-lg text-base-content/70 max-w-xl">Anagum AI designs and builds AI systems, AI automations, fullstack apps and mobile apps for companies and other clients. From first prototype to production.</p>
-            <div class="flex flex-wrap gap-3">
-              <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Talk to sales</a>
-              <a class="btn btn-ghost border border-base-300" href="https://app.anagumai.com" rel="noopener">Open the research tool</a>
+            <p class="text-xs font-bold tracking-widest text-primary pb-4">AI ENGINEERING &amp; PRODUCT STUDIO</p>
+            <h1 class="text-3xl lg:text-5xl font-extrabold tracking-tight text-balance">Ship verifiable AI systems and software your team can trust in production.</h1>
+            <p class="py-6 text-lg text-base-content/70 max-w-xl">Anagum AI designs, builds, and hands over custom AI knowledge systems, workflow automations, and the web and mobile apps that power them. No hallucinations, bloated timelines, or vendor lock-in.</p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a class="btn btn-primary w-full sm:w-auto" href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a 20-min scoping call</a>
+              <a class="link link-primary font-semibold" href="mailto:sales@anagumai.com?subject=Project%20brief%20for%20Anagum%20AI">Or send a brief &#8594;</a>
             </div>
-            <p class="pt-6 text-sm text-base-content/60">We run our own research platform in production at <a class="link link-primary" href="https://app.anagumai.com" rel="noopener">app.anagumai.com</a>.</p>
+            <p class="pt-6 text-sm text-base-content/60">Built and operated in production. See our live research workspace, <a class="link link-primary" href="https://app.anagumai.com" rel="noopener">THE EYE at app.anagumai.com &#8594;</a></p>
           </div>
         </div>
       </div>
@@ -79,30 +80,38 @@
         <h2 class="text-3xl font-bold tracking-tight">Solutions</h2>
         <p class="pt-3 pb-10 text-lg text-base-content/70 max-w-2xl">What we build for clients, delivered in production.</p>
         <div class="grid gap-10 lg:grid-cols-5 items-start">
-          <img src="/images/developers.jpg" alt="Two developers reviewing code on a monitor" width="1600" height="1067" loading="lazy" class="w-full rounded-box shadow-lg lg:col-span-2">
+          <img src="/images/developers.jpg" alt="Three colleagues collaborating with a laptop and tablet" width="1600" height="1067" loading="lazy" class="w-full rounded-box shadow-lg lg:col-span-2">
           <div class="grid gap-5 sm:grid-cols-2 lg:col-span-3">
             <article class="card bg-base-100 border border-base-300">
               <div class="card-body">
-                <h3 class="card-title text-lg">AI systems</h3>
-                <p class="text-base-content/70">Custom AI products built around your data and workflows. Assistants, search, extraction and decision support that run in production.</p>
+                <p class="text-sm font-bold text-primary">01</p>
+                <h3 class="card-title text-lg">Verifiable AI Systems</h3>
+                <p class="text-base-content/70">Turn scattered documents, PDFs, and internal records into instant, citation-backed answers.</p>
+                <p class="text-base-content/70 text-sm"><span class="font-semibold text-base-content">Built for:</span> legal and compliance research, internal knowledge copilots, and structured extraction with human review.</p>
               </div>
             </article>
             <article class="card bg-base-100 border border-base-300">
               <div class="card-body">
-                <h3 class="card-title text-lg">AI automations</h3>
-                <p class="text-base-content/70">Workflows that run themselves. We connect your tools and automate repetitive work across sales, support and operations.</p>
+                <p class="text-sm font-bold text-primary">02</p>
+                <h3 class="card-title text-lg">AI Workflow Automations</h3>
+                <p class="text-base-content/70">Eliminate repetitive triage, reporting, and copy-paste work across your existing tools.</p>
+                <p class="text-base-content/70 text-sm"><span class="font-semibold text-base-content">Built for:</span> background processing pipelines, CRM and ERP enrichment, and scheduled agents with audit trails.</p>
               </div>
             </article>
             <article class="card bg-base-100 border border-base-300">
               <div class="card-body">
-                <h3 class="card-title text-lg">Fullstack apps</h3>
-                <p class="text-base-content/70">Web applications, APIs and internal tools, designed around how your team works and built to scale.</p>
+                <p class="text-sm font-bold text-primary">03</p>
+                <h3 class="card-title text-lg">Fullstack Web Platforms</h3>
+                <p class="text-base-content/70">Replace fragile spreadsheets or legacy portals with fast, multi-user web apps built to scale.</p>
+                <p class="text-base-content/70 text-sm"><span class="font-semibold text-base-content">Built for:</span> customer portals, operational dashboards, and AI-native SaaS products with role-based permissions.</p>
               </div>
             </article>
             <article class="card bg-base-100 border border-base-300">
               <div class="card-body">
-                <h3 class="card-title text-lg">Mobile apps</h3>
-                <p class="text-base-content/70">iOS and Android apps, designed for the people who use them every day and built to last.</p>
+                <p class="text-sm font-bold text-primary">04</p>
+                <h3 class="card-title text-lg">Mobile Applications</h3>
+                <p class="text-base-content/70">Put field workflows, client tools, and real-time AI in your users' hands.</p>
+                <p class="text-base-content/70 text-sm"><span class="font-semibold text-base-content">Built for:</span> offline-tolerant field apps, customer mobile products, and companion apps synced to your web backend.</p>
               </div>
             </article>
           </div>
@@ -113,26 +122,21 @@
     <section class="bg-primary text-primary-content" id="product">
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20 grid gap-10 lg:grid-cols-2 items-center">
         <div>
-          <h2 class="text-3xl font-bold tracking-tight">Our research tool</h2>
-          <p class="py-5 text-primary-content/80 text-lg max-w-xl">We build the software we sell. Our research platform collects and analyses evidence at scale. We run it for our own work, and it is available to use now.</p>
-          <ul class="divide-y divide-primary-content/20 border-y border-primary-content/20 max-w-xl">
-            <li class="py-3">Structured research collection and analysis</li>
-            <li class="py-3">Built for evidence handling</li>
-            <li class="py-3">Operated in production by our team</li>
-          </ul>
+          <p class="text-xs font-bold tracking-widest text-primary-content/70 pb-4">LIVE IN PRODUCTION</p>
+          <h2 class="text-3xl font-bold tracking-tight">What production-grade looks like</h2>
+          <p class="py-5 text-primary-content/80 text-lg max-w-xl">We do not just pitch AI systems. We run our own. THE EYE at app.anagumai.com is our live research and knowledge workspace: document knowledge bases, citation-checked AI briefs, background job orchestration, and role-based access control. Everything we build for clients meets this same production bar.</p>
+          <div class="flex flex-wrap gap-2 max-w-xl">
+            <span class="badge badge-accent badge-lg">Source-linked citations</span>
+            <span class="badge badge-accent badge-lg">Workspace permission scoping</span>
+            <span class="badge badge-accent badge-lg">Background task queues</span>
+            <span class="badge badge-accent badge-lg">Human-in-the-loop review</span>
+          </div>
           <div class="pt-7">
-            <a class="btn btn-accent" href="https://app.anagumai.com" rel="noopener">Open app.anagumai.com</a>
+            <a class="btn btn-accent" href="https://app.anagumai.com" rel="noopener">Explore THE EYE &#8594;</a>
           </div>
         </div>
         <div class="grid gap-5">
-          <img src="/images/meeting.jpg" alt="Team meeting around a table in an office" width="1600" height="1096" loading="lazy" class="w-full rounded-box shadow-lg">
-          <dl class="card bg-primary-content/10 border border-primary-content/20">
-            <div class="card-body p-5 grid grid-cols-3 gap-4 text-sm">
-              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Status</dt><dd class="font-semibold pt-1">Live in production</dd></div>
-              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Address</dt><dd class="font-semibold pt-1">app.anagumai.com</dd></div>
-              <div><dt class="opacity-70 text-xs uppercase tracking-wide">Built by</dt><dd class="font-semibold pt-1">Anagum AI</dd></div>
-            </div>
-          </dl>
+          <img src="/images/meeting.jpg" alt="Professional working on a laptop in an office" width="1600" height="1067" loading="lazy" class="w-full rounded-box shadow-lg">
         </div>
       </div>
     </section>
@@ -141,22 +145,25 @@
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
         <h2 class="text-3xl font-bold tracking-tight pb-10">How we work</h2>
         <ol class="steps steps-vertical md:steps-horizontal w-full">
-          <li class="step step-primary font-semibold">Talk</li>
-          <li class="step step-primary font-semibold">Build</li>
-          <li class="step step-primary font-semibold">Run</li>
+          <li class="step step-primary font-semibold">Align and Scope</li>
+          <li class="step step-primary font-semibold">Build in the Open</li>
+          <li class="step step-primary font-semibold">Launch and Own</li>
         </ol>
         <div class="grid gap-8 md:grid-cols-3 pt-8">
           <div>
-            <h3 class="font-bold text-lg">Talk</h3>
-            <p class="pt-2 text-base-content/70">Tell us what you need and what it must do. We scope the work honestly. If we are not the right fit, we say so.</p>
+            <h3 class="font-bold text-lg">Align and Scope</h3>
+            <p class="pt-2 text-base-content/70">Honest technical discovery before a single line of code is billed. If AI is not the right tool, or we are not the right partner, we tell you upfront.</p>
+            <p class="pt-3 text-sm text-base-content/70"><span class="font-semibold text-base-content">You leave with:</span> written architecture scope, a realistic timeline, and a fixed milestone estimate.</p>
           </div>
           <div>
-            <h3 class="font-bold text-lg">Build</h3>
-            <p class="pt-2 text-base-content/70">We design and build in short iterations you can see and test, against the production environment from the start.</p>
+            <h3 class="font-bold text-lg">Build in the Open</h3>
+            <p class="pt-2 text-base-content/70">Short weekly shipping cycles into a live staging environment, so your team tests real workflows early. Not slide decks.</p>
+            <p class="pt-3 text-sm text-base-content/70"><span class="font-semibold text-base-content">You leave with:</span> weekly working builds, staging access, and fast feedback loops.</p>
           </div>
           <div>
-            <h3 class="font-bold text-lg">Run</h3>
-            <p class="pt-2 text-base-content/70">We deploy, monitor and keep improving the system, and hand over what your team needs to own it.</p>
+            <h3 class="font-bold text-lg">Launch and Own</h3>
+            <p class="pt-2 text-base-content/70">Production deployment, tuning against real edge cases, and complete handover so your team runs the system independently.</p>
+            <p class="pt-3 text-sm text-base-content/70"><span class="font-semibold text-base-content">You leave with:</span> 100% IP ownership, a clean documented codebase, runbooks, and zero lock-in.</p>
           </div>
         </div>
       </div>
@@ -169,16 +176,43 @@
       </div>
     </section>
 
-    <section class="bg-base-200" id="contact">
+    <section class="border-b border-base-300" id="fit">
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+        <h2 class="text-3xl font-bold tracking-tight">Should we work together?</h2>
         <div class="grid gap-5 md:grid-cols-2 pt-8">
           <article class="card bg-base-100 border border-base-300">
             <div class="card-body">
-              <h3 class="card-title">New project</h3>
-              <p class="text-base-content/70">Starting something new? Tell us about it.</p>
-              <div class="card-actions pt-2">
-                <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Email sales@anagumai.com</a>
+              <h3 class="card-title">A strong fit</h3>
+              <p class="text-base-content/70">You have a real operational bottleneck or product roadmap, want weekly visibility, and expect clean code you fully own.</p>
+            </div>
+          </article>
+          <article class="card bg-base-100 border border-base-300">
+            <div class="card-body">
+              <h3 class="card-title">Not a fit</h3>
+              <p class="text-base-content/70">You want an unverified chatbot wrapper overnight, or locked-in black-box tooling.</p>
+            </div>
+          </article>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-8">
+          <span class="text-sm font-semibold pr-2">Engineering standards:</span>
+          <span class="badge badge-outline badge-lg">Scoped data boundaries</span>
+          <span class="badge badge-outline badge-lg">Human-review checkpoints</span>
+          <span class="badge badge-outline badge-lg">100% client IP and repository ownership</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-base-200" id="contact">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <h2 class="text-3xl font-bold tracking-tight">Start with a scoping call</h2>
+        <div class="grid gap-5 md:grid-cols-2 pt-8">
+          <article class="card bg-base-100 border border-base-300">
+            <div class="card-body">
+              <h3 class="card-title">Book 20 minutes</h3>
+              <p class="text-base-content/70">You leave with a technical roadmap and an honest fit verdict.</p>
+              <div class="card-actions pt-2 items-center gap-4">
+                <a class="btn btn-primary w-full sm:w-auto" href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a scoping call</a>
+                <a class="link link-primary font-semibold" href="mailto:sales@anagumai.com?subject=Project%20brief%20for%20Anagum%20AI">Or send a 3-line brief</a>
               </div>
             </div>
           </article>
@@ -220,7 +254,6 @@
       <nav class="grid gap-2 content-start justify-items-start">
         <h3 class="footer-title">Connect</h3>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
-        <a class="link link-hover" href="https://www.linkedin.com/in/lewis-muguna-070080166/" rel="noopener">Lewis Muguna, CEO</a>
       </nav>
     </div>
     <div class="max-w-6xl mx-auto px-6 w-full flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60 border-t border-neutral-content/20 pt-6">

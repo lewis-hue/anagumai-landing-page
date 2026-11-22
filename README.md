@@ -5,7 +5,8 @@
 Company site for Anagum AI, served at https://www.anagumai.com.
 
 Static single page: `index.html`, compiled `styles.css`, `favicon.svg`,
-`robots.txt`, `images/`. No JavaScript, no form.
+`robots.txt`, `images/`. No JavaScript, no form. Photos other than the
+logo are by Christina @ wocintechchat.com via Unsplash.
 
 Styling is Tailwind CSS plus daisyUI with one bespoke `anagum` theme,
 compiled at author time and committed, so the deployed site stays plain
