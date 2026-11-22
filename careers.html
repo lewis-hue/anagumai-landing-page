@@ -266,50 +266,54 @@
 
     <section class="bg-base-200" id="apply">
       <div class="max-w-3xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Apply</h2>
-        <p class="pt-3 pb-8 text-lg text-base-content/70">Fill this in, then attach your resume in your email app when it opens.</p>
-        <form id="apply-form" novalidate>
-          <div class="grid gap-5">
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">Full name</legend>
-              <input class="input w-full" type="text" id="apply-name" name="name" autocomplete="name" maxlength="120" required>
-            </fieldset>
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">Email</legend>
-              <input class="input w-full" type="email" id="apply-email" name="email" autocomplete="email" maxlength="120" required>
-            </fieldset>
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">Position</legend>
-              <select class="select w-full" id="apply-position" name="position" required>
-                <option value="">Choose a role</option>
-                <option value="Senior AI Engineer">Senior AI Engineer</option>
-                <option value="Full-Stack Engineer">Full-Stack Engineer</option>
-                <option value="Product Designer (Contract)">Product Designer (Contract)</option>
-                <option value="Open application">Open application</option>
-              </select>
-            </fieldset>
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">LinkedIn profile <span class="font-normal text-base-content/60">(optional)</span></legend>
-              <input class="input w-full" type="url" id="apply-linkedin" name="linkedin" autocomplete="url" maxlength="300" placeholder="https://www.linkedin.com/in/you">
-            </fieldset>
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">Portfolio <span class="font-normal text-base-content/60">(optional)</span></legend>
-              <input class="input w-full" type="url" id="apply-portfolio" name="portfolio" autocomplete="url" maxlength="300" placeholder="https://your-work.example.com">
-            </fieldset>
-            <fieldset class="fieldset">
-              <legend class="fieldset-legend">Cover note <span class="font-normal text-base-content/60">(optional)</span></legend>
-              <textarea class="textarea w-full" id="apply-note" name="note" rows="4" maxlength="1000" placeholder="Three lines are enough: what you want to build, and one thing you shipped."></textarea>
-            </fieldset>
-            <div class="alert alert-info" role="note">
-              <span>Your resume travels as an email attachment. The button below opens your mail app with everything filled in, and you attach your resume before sending.</span>
-            </div>
-            <div>
-              <button class="btn btn-primary w-full sm:w-auto" type="button" id="apply-submit">Compose application email</button>
-              <p class="pt-3 text-sm text-base-content/70" id="apply-status" role="status"></p>
-            </div>
-            <p class="text-sm text-base-content/70">Prefer to write freely? Email <a class="link link-primary font-semibold" href="mailto:careers@anagumai.com?subject=Application%20for%20Anagum%20AI">careers@anagumai.com</a> directly.</p>
+        <h2 class="text-3xl font-bold tracking-tight">Apply in two minutes</h2>
+        <p class="pt-3 pb-8 text-lg text-base-content/70">Fill in the form, attach your resume in your email app, send.</p>
+        <div class="card bg-base-100 border border-base-300">
+          <div class="card-body">
+            <form id="apply-form" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Full name</legend>
+                  <input class="input w-full" type="text" id="apply-name" name="name" autocomplete="name" maxlength="120" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Email</legend>
+                  <input class="input w-full" type="email" id="apply-email" name="email" autocomplete="email" maxlength="120" required>
+                </fieldset>
+                <fieldset class="fieldset sm:col-span-2">
+                  <legend class="fieldset-legend">Position</legend>
+                  <select class="select w-full" id="apply-position" name="position" required>
+                    <option value="">Choose a role</option>
+                    <option value="Senior AI Engineer">Senior AI Engineer</option>
+                    <option value="Full-Stack Engineer">Full-Stack Engineer</option>
+                    <option value="Product Designer (Contract)">Product Designer (Contract)</option>
+                    <option value="Open application">Open application</option>
+                  </select>
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">LinkedIn <span class="font-normal text-base-content/60">(optional)</span></legend>
+                  <input class="input w-full" type="url" id="apply-linkedin" name="linkedin" autocomplete="url" maxlength="300" placeholder="linkedin.com/in/you">
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Portfolio <span class="font-normal text-base-content/60">(optional)</span></legend>
+                  <input class="input w-full" type="url" id="apply-portfolio" name="portfolio" autocomplete="url" maxlength="300" placeholder="your-work.example.com">
+                </fieldset>
+                <fieldset class="fieldset sm:col-span-2">
+                  <legend class="fieldset-legend">Cover note <span class="font-normal text-base-content/60">(optional)</span></legend>
+                  <textarea class="textarea w-full" id="apply-note" name="note" rows="3" maxlength="1000" placeholder="What you want to build, and one thing you shipped."></textarea>
+                </fieldset>
+              </div>
+              <div class="alert mt-6" role="note">
+                <span class="text-sm">No account needed. This opens your email app with everything filled in. Attach your resume, then send.</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6">
+                <button class="btn btn-primary" type="button" id="apply-submit">Compose application email</button>
+                <span class="text-sm text-base-content/70">or <a class="link link-primary font-semibold" href="mailto:careers@anagumai.com?subject=Application%20for%20Anagum%20AI">email us directly</a></span>
+              </div>
+              <p class="pt-3 text-sm" id="apply-status" role="status"></p>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   </main>
