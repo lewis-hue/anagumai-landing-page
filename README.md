@@ -4,9 +4,12 @@
 
 Company site for Anagum AI, served at https://www.anagumai.com.
 
-Static single page: `index.html`, compiled `styles.css`, `favicon.svg`,
-`robots.txt`, `images/`. No JavaScript, no form. Photos other than the
-logo are by Annie Spratt and Sigmund via Unsplash.
+Static multi-page site: `index.html`, `about.html`, `contact.html`,
+`ai-automations.html`, `ai-agents.html`, compiled `styles.css`,
+`favicon.svg`, `robots.txt`, `sitemap.xml`, `images/`. No JavaScript, no
+form. Photos other than the logo are by Annie Spratt and Sigmund via
+Unsplash. Every page shares the same header nav and footer; keep them in
+sync when editing.
 
 Styling is Tailwind CSS plus daisyUI with one bespoke `anagum` theme,
 compiled at author time and committed, so the deployed site stays plain
