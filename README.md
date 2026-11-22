@@ -6,7 +6,8 @@ Company site for Anagum AI, served at https://www.anagumai.com.
 
 Static multi-page site: `index.html`, `about.html`, `contact.html`,
 `ai-automations.html`, `ai-agents.html`, compiled `styles.css`,
-`favicon.svg`, `robots.txt`, `sitemap.xml`, `images/`. No JavaScript, no
+`favicon.ico`, `apple-touch-icon.png`, `robots.txt`, `sitemap.xml`,
+`images/`. No JavaScript, no
 form. Photos other than the logo are by Annie Spratt and Sigmund via
 Unsplash. Every page shares the same header nav and footer; keep them in
 sync when editing.
