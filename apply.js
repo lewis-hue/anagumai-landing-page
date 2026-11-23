@@ -35,12 +35,6 @@
     var status = document.getElementById("apply-status");
     if (!form || !position || !submit || !status) return;
 
-    document.querySelectorAll("[data-apply-for]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        position.value = btn.getAttribute("data-apply-for");
-      });
-    });
-
     submit.addEventListener("click", function () {
       var endpoint = form.getAttribute("data-endpoint") || "";
       if (endpoint.indexOf(PLACEHOLDER) !== -1) {
