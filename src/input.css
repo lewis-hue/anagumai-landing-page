@@ -77,15 +77,12 @@ body {
   border-radius: 0.25rem;
 }
 
-/* ---- Dark bands: navy field with a faint survey grid. The grid is drawn
-   in code (linear-gradients), so it adds no image requests and stays
-   inside the style-src 'self' policy. ---- */
+/* ---- Dark bands: flat navy field. Deliberately no background grid or
+   gradient wash; the shadcn block language the headers follow is flat
+   surfaces with crisp borders, and the trace panel carries the visual
+   interest on its own. ---- */
 .band-dark {
   background-color: var(--anagum-abyss);
-  background-image:
-    linear-gradient(to right, rgb(148 197 255 / 0.055) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(148 197 255 / 0.055) 1px, transparent 1px);
-  background-size: 44px 44px;
   color: #f2f7fa;
 }
 
