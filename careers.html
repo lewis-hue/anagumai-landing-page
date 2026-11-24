@@ -7,7 +7,7 @@
   <meta name="description" content="Join Anagum AI, a remote-first AI agency hiring engineers and builders. Open roles: Senior AI Engineer, Full-Stack Engineer and Product Designer.">
   <link rel="canonical" href="https://www.anagumai.com/careers">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#0c4f5c">
+  <meta name="theme-color" content="#060d1d">
   <meta property="og:site_name" content="Anagum AI">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Careers at Anagum AI | Remote AI Jobs">
@@ -61,24 +61,25 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-neutral focus:text-neutral-content focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 
-  <header class="sticky top-0 z-40 bg-base-100 border-b border-base-300">
+  <header class="sticky top-0 z-40 bg-base-100/90 backdrop-blur border-b border-base-300">
     <nav class="navbar max-w-6xl mx-auto px-6" aria-label="Main">
       <div class="navbar-start">
         <div class="dropdown md:hidden">
           <button tabindex="0" class="btn btn-ghost btn-square" aria-label="Open menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
           </button>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 border border-base-300">
-            <li><a href="/#services">Solutions</a></li>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56 border border-base-300">
+            <li><a href="/">Home</a></li>
+            <li><a href="/ai-agents">AI agents</a></li>
+            <li><a href="/ai-automations">Automations</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/careers">Careers</a></li>
-            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/careers" aria-current="page">Careers</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -89,129 +90,120 @@
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1 font-medium">
-          <li><a href="/#services">Solutions</a></li>
+          <li><a href="/ai-agents">AI agents</a></li>
+          <li><a href="/ai-automations">Automations</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/careers">Careers</a></li>
-          <li><a href="/#faq">FAQ</a></li>
+          <li><a href="/careers" aria-current="page">Careers</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn btn-primary btn-sm hidden sm:inline-flex" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact sales</a>
+        <a class="btn btn-primary btn-sm hidden sm:inline-flex" href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a scoping call</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="border-b border-base-300">
+    <section class="band-dark" data-hero>
       <div class="max-w-6xl mx-auto px-6 py-12 lg:py-16">
         <nav aria-label="Breadcrumb">
-          <ol class="flex flex-wrap items-center gap-2 text-sm text-base-content/60">
-            <li><a class="link link-hover" href="/">Home</a></li>
+          <ol class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+            <li><a class="underline decoration-slate-500/50 underline-offset-4 hover:text-slate-200" href="/">Home</a></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page" class="text-base-content">Careers</li>
+            <li aria-current="page" class="text-slate-200">Careers</li>
           </ol>
         </nav>
-        <h1 class="pt-6 text-3xl lg:text-5xl font-extrabold tracking-tight text-balance">Careers at Anagum AI</h1>
-        <p class="pt-5 text-lg text-base-content/70 max-w-3xl">We are a small, remote-first team building AI systems people rely on every day. If you like shipping to production and owning your work, you will fit right in.</p>
-      </div>
-    </section>
-
-    <section class="border-b border-base-300">
-      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">How we work</h2>
-        <div class="grid gap-5 md:grid-cols-3 pt-8">
-          <article class="card bg-base-100 border border-base-300">
-            <div class="card-body">
-              <h3 class="card-title">Remote-first and async</h3>
-              <p class="text-base-content/70">Work from where you do your best work. Written updates over meetings, overlap hours for pairing, and trust by default.</p>
-            </div>
-          </article>
-          <article class="card bg-base-100 border border-base-300">
-            <div class="card-body">
-              <h3 class="card-title">Small senior team</h3>
-              <p class="text-base-content/70">Few people, big ownership. You will talk to clients, shape scope and see your work run in production within weeks.</p>
-            </div>
-          </article>
-          <article class="card bg-base-100 border border-base-300">
-            <div class="card-body">
-              <h3 class="card-title">Production bar</h3>
-              <p class="text-base-content/70">Citation-checked outputs, tests that matter, clean handoffs. We review each other's work and keep the bar high together.</p>
-            </div>
-          </article>
+        <div class="max-w-3xl pt-8" data-hero-copy>
+          <h1 class="text-4xl lg:text-5xl font-black tracking-tight text-balance text-white">Careers at Anagum AI</h1>
+          <p class="pt-5 text-lg text-slate-300">We are a small, remote-first team building AI systems people rely on every day. If you like shipping to production and owning your work, you will fit right in.</p>
+          <div class="flex flex-wrap items-center gap-4 pt-8">
+            <a class="btn btn-accent" data-magnet href="#roles">See open roles</a>
+            <a class="font-semibold text-cyan-200 underline decoration-cyan-200/40 underline-offset-4 hover:decoration-cyan-200" href="#apply">Open application</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="border-b border-base-300" id="roles">
+    <section>
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Open roles</h2>
-        <p class="pt-3 pb-10 text-lg text-base-content/70 max-w-2xl">Three openings on a small team. Every role is remote.</p>
-        <div class="grid gap-5">
-          <article class="card bg-base-100 border border-base-300" id="role-senior-ai-engineer">
-            <div class="card-body">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="badge badge-primary">Remote</span>
-                <span class="badge badge-outline">Full-time</span>
-              </div>
-              <h3 class="card-title text-xl pt-2">Senior AI Engineer</h3>
-              <p class="text-base-content/70">Design and ship LLM systems for clients: knowledge copilots, extraction pipelines and AI agents running in production.</p>
-              <ul class="grid gap-2 pt-2 pl-5 text-base-content/70 list-disc">
+        <div data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">How we work</h2>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3 pt-10" data-reveal>
+          <div class="border-t-2 border-primary pt-5">
+            <h3 class="text-lg font-bold">Remote-first and async</h3>
+            <p class="pt-2 text-base-content/70">Work from where you do your best work. Written updates over meetings, overlap hours for pairing, and trust by default.</p>
+          </div>
+          <div class="border-t-2 border-primary pt-5">
+            <h3 class="text-lg font-bold">Small senior team</h3>
+            <p class="pt-2 text-base-content/70">Few people, big ownership. You will talk to clients, shape scope and see your work run in production within weeks.</p>
+          </div>
+          <div class="border-t-2 border-primary pt-5">
+            <h3 class="text-lg font-bold">Production bar</h3>
+            <p class="pt-2 text-base-content/70">Citation-checked outputs, tests that matter, clean handoffs. We review each other's work and keep the bar high together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-base-200" id="roles">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <div data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Open roles</h2>
+          <p class="pt-3 text-lg text-base-content/70 max-w-2xl">Three openings on a small team. Every role is remote.</p>
+        </div>
+        <div class="pt-6" data-reveal>
+          <article class="solution-row" id="role-senior-ai-engineer">
+            <p class="solution-kicker">Remote · Full-time</p>
+            <div>
+              <h3 class="text-xl font-bold">Senior AI Engineer</h3>
+              <p class="pt-1 text-base-content/70">Design and ship LLM systems for clients: knowledge copilots, extraction pipelines and AI agents running in production.</p>
+              <ul class="grid gap-1 pt-3 pl-5 text-base-content/70 list-disc">
                 <li>You have shipped production features built on LLMs, not just prototypes.</li>
                 <li>You are comfortable with retrieval, citations and evals that prove outputs hold.</li>
                 <li>You write Python and TypeScript, and you review code with care.</li>
               </ul>
-              <div class="card-actions pt-3">
-                <a class="btn btn-primary btn-sm" href="/apply-senior-ai-engineer">Apply for this role</a>
-              </div>
             </div>
+            <p><a class="btn btn-primary btn-sm whitespace-nowrap" href="/apply-senior-ai-engineer">Apply for this role</a></p>
           </article>
-          <article class="card bg-base-100 border border-base-300" id="role-full-stack-engineer">
-            <div class="card-body">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="badge badge-primary">Remote</span>
-                <span class="badge badge-outline">Full-time</span>
-              </div>
-              <h3 class="card-title text-xl pt-2">Full-Stack Engineer</h3>
-              <p class="text-base-content/70">Build customer portals, dashboards and AI-native SaaS: Next.js frontends, clean APIs and Postgres backends with auth and permissions.</p>
-              <ul class="grid gap-2 pt-2 pl-5 text-base-content/70 list-disc">
+          <article class="solution-row" id="role-full-stack-engineer">
+            <p class="solution-kicker">Remote · Full-time</p>
+            <div>
+              <h3 class="text-xl font-bold">Full-Stack Engineer</h3>
+              <p class="pt-1 text-base-content/70">Build customer portals, dashboards and AI-native SaaS: Next.js frontends, clean APIs and Postgres backends with auth and permissions.</p>
+              <ul class="grid gap-1 pt-3 pl-5 text-base-content/70 list-disc">
                 <li>You have shipped production Next.js apps backed by Postgres.</li>
                 <li>You design APIs that stay boring in the best way: predictable and documented.</li>
                 <li>You care about the last 10 percent of fit and finish in UI.</li>
               </ul>
-              <div class="card-actions pt-3">
-                <a class="btn btn-primary btn-sm" href="/apply-full-stack-engineer">Apply for this role</a>
-              </div>
             </div>
+            <p><a class="btn btn-primary btn-sm whitespace-nowrap" href="/apply-full-stack-engineer">Apply for this role</a></p>
           </article>
-          <article class="card bg-base-100 border border-base-300" id="role-product-designer">
-            <div class="card-body">
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="badge badge-primary">Remote</span>
-                <span class="badge badge-outline">Contract</span>
-              </div>
-              <h3 class="card-title text-xl pt-2">Product Designer (Contract)</h3>
-              <p class="text-base-content/70">Turn complex workflows into clear interfaces for portals and dashboards. Own design end to end with engineers, from first sketch to shipped UI.</p>
-              <ul class="grid gap-2 pt-2 pl-5 text-base-content/70 list-disc">
+          <article class="solution-row" id="role-product-designer">
+            <p class="solution-kicker">Remote · Contract</p>
+            <div>
+              <h3 class="text-xl font-bold">Product Designer (Contract)</h3>
+              <p class="pt-1 text-base-content/70">Turn complex workflows into clear interfaces for portals and dashboards. Own design end to end with engineers, from first sketch to shipped UI.</p>
+              <ul class="grid gap-1 pt-3 pl-5 text-base-content/70 list-disc">
                 <li>Your portfolio shows B2B or SaaS work used by real teams.</li>
                 <li>You think in systems: components, states and edge cases included.</li>
                 <li>You collaborate async and defend decisions with user reasoning.</li>
               </ul>
-              <div class="card-actions pt-3">
-                <a class="btn btn-primary btn-sm" href="/apply-product-designer">Apply for this role</a>
-              </div>
             </div>
+            <p><a class="btn btn-primary btn-sm whitespace-nowrap" href="/apply-product-designer">Apply for this role</a></p>
           </article>
         </div>
-        <p class="pt-8 text-base-content/70">Do not see your role? Send an open application below and tell us what you want to build.</p>
+        <p class="pt-8 text-base-content/70" data-reveal>Do not see your role? Send an open application below and tell us what you want to build.</p>
       </div>
     </section>
 
-    <section class="bg-base-200" id="apply">
+    <section id="apply">
       <div class="max-w-3xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Apply in two minutes</h2>
-        <p class="pt-3 pb-8 text-lg text-base-content/70">Fill in the form and attach your resume. We read every application.</p>
-        <div class="card bg-base-100 border border-base-300">
+        <div data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Apply in two minutes</h2>
+          <p class="pt-3 text-lg text-base-content/70">Fill in the form and attach your resume. We read every application.</p>
+        </div>
+        <div class="card bg-base-100 border border-base-300 shadow-sm mt-8" data-reveal>
           <div class="card-body">
             <form id="apply-form" novalidate data-endpoint="https://usebasin.com/f/REPLACE-WITH-YOUR-FORM-ID">
               <div class="grid gap-5 sm:grid-cols-2">
@@ -253,7 +245,7 @@
               </div>
               <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6">
                 <button class="btn btn-primary" type="button" id="apply-submit">Submit application</button>
-                <span class="text-sm text-base-content/70">Problems with the form? Email <a class="link link-primary font-semibold" href="mailto:careers@anagumai.com?subject=Application%20for%20Anagum%20AI">careers@anagumai.com</a> with your resume attached.</span>
+                <span class="text-sm text-base-content/70">Problems with the form? Email <a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary" href="mailto:careers@anagumai.com?subject=Application%20for%20Anagum%20AI">careers@anagumai.com</a> with your resume attached.</span>
               </div>
               <p class="pt-3 text-sm" id="apply-status" role="status"></p>
             </form>
@@ -263,16 +255,16 @@
     </section>
   </main>
 
-  <footer class="footer bg-neutral text-neutral-content p-10 max-w-none">
-    <div class="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-4 w-full">
-      <nav class="grid gap-2 content-start justify-items-start">
+  <footer class="bg-neutral text-neutral-content">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
+      <nav class="grid gap-3 content-start justify-items-start" aria-label="Footer">
         <a href="/" class="flex items-center gap-2.5" aria-label="Anagum AI home">
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-10 w-10 rounded-lg object-cover">
           <span class="text-lg font-extrabold">Anagum AI</span>
         </a>
-        <p class="text-sm text-neutral-content/70 max-w-xs">AI agency building solutions.</p>
+        <p class="text-sm text-neutral-content/70 max-w-xs">An AI agency building systems your team can verify.</p>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer site">
         <h3 class="footer-title">Site</h3>
         <a class="link link-hover" href="/">Home</a>
         <a class="link link-hover" href="/about">About</a>
@@ -280,23 +272,29 @@
         <a class="link link-hover" href="/#faq">FAQ</a>
         <a class="link link-hover" href="/contact">Contact</a>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer services">
         <h3 class="footer-title">Services</h3>
-        <a class="link link-hover" href="/ai-automations">AI Automations</a>
         <a class="link link-hover" href="/ai-agents">AI Agents &amp; Systems</a>
+        <a class="link link-hover" href="/ai-automations">AI Automations</a>
         <a class="link link-hover" href="/#services">All solutions</a>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer contact">
         <h3 class="footer-title">Contact</h3>
         <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
         <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
       </nav>
     </div>
-    <div class="max-w-6xl mx-auto px-6 w-full flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60 border-t border-neutral-content/20 pt-6">
-      <span>© 2026 Anagum AI</span>
+    <div class="border-t border-neutral-content/20">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60">
+        <span>© 2026 Anagum AI</span>
+        <span>Automations, agents, web and mobile.</span>
+      </div>
     </div>
   </footer>
+  <script src="/js/gsap.min.js" defer></script>
+  <script src="/js/ScrollTrigger.min.js" defer></script>
+  <script src="/js/site.js" defer></script>
   <script src="/apply.js" defer></script>
 </body>
 </html>

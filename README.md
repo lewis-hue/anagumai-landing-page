@@ -8,10 +8,19 @@ Static multi-page site: `index.html`, `about.html`, `contact.html`,
 `careers.html`, `apply-senior-ai-engineer.html`,
 `apply-full-stack-engineer.html`, `apply-product-designer.html`,
 `ai-automations.html`, `ai-agents.html`, compiled `styles.css`,
-`apply.js`, `favicon.ico`, `apple-touch-icon.png`, `robots.txt`,
-`sitemap.xml`, `images/`. No form backend. Photos other
-than the logo are by Annie Spratt and Sigmund via Unsplash. Every page
-shares the same header nav and footer; keep them in sync when editing.
+`apply.js`, `js/` (vendored GSAP + ScrollTrigger 3.12.5 plus the
+first-party `site.js` motion layer), `favicon.ico`,
+`apple-touch-icon.png`, `robots.txt`, `sitemap.xml`, `images/`. No form
+backend. Photos other than the logo are by Annie Spratt and Sigmund via
+Unsplash. Every page shares the same header nav and footer; keep them
+in sync when editing.
+
+Motion runs on GSAP, vendored into `js/` because the site's enforcing
+Content-Security-Policy (`deploy/contabo/Caddyfile` in `the-eye`) only
+allows first-party scripts: no CDN script tags, no inline scripts and
+no inline styles. `site.js` animates from visible states only, so the
+finished page shows with JS disabled, and everything yields to
+`prefers-reduced-motion`.
 
 Job applications on `careers.html` are submitted by `apply.js` (vanilla
 JS, no dependencies) to a Basin form endpoint set in the form's

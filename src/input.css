@@ -4,33 +4,36 @@
   themes: false;
 }
 
-/* Brand font for the whole page. */
+/* Brand type. Archivo carries display and body; the system mono stack is
+   reserved for the agent-trace transcript, where fixed pitch is functional. */
 @theme {
   --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
 }
 
-/* Single bespoke theme. Same variable set as the shipped daisyUI themes,
-   applied through data-theme="anagum" on <html>. */
+/* Single bespoke theme, applied through data-theme="anagum" on <html>.
+   Re-grounded in the actual brand mark: deep space navy with a signal cyan,
+   replacing the earlier teal/gold which matched nothing in the logo. */
 [data-theme="anagum"] {
   color-scheme: light;
   --color-base-100: #ffffff;
-  --color-base-200: #f2f5f6;
-  --color-base-300: #dfe7ea;
-  --color-base-content: #152229;
-  --color-primary: #0c4f5c;
+  --color-base-200: #eef3f6;
+  --color-base-300: #d8e2e9;
+  --color-base-content: #0c1a26;
+  --color-primary: #0a1730;
   --color-primary-content: #ffffff;
-  --color-secondary: #54656d;
+  --color-secondary: #0e7490;
   --color-secondary-content: #ffffff;
-  --color-accent: #c9860b;
-  --color-accent-content: #152229;
-  --color-neutral: #152229;
-  --color-neutral-content: #ffffff;
+  --color-accent: #22d3ee;
+  --color-accent-content: #060d1d;
+  --color-neutral: #060d1d;
+  --color-neutral-content: #f2f7fa;
   --color-info: #0284c7;
   --color-info-content: #ffffff;
   --color-success: #15803d;
   --color-success-content: #ffffff;
   --color-warning: #b45309;
-  --color-warning-content: #152229;
+  --color-warning-content: #ffffff;
   --color-error: #b91c1c;
   --color-error-content: #ffffff;
   --radius-selector: 0.5rem;
@@ -43,8 +46,244 @@
   --noise: 0;
 }
 
+/* Shared brand tokens outside the daisyUI set. */
+:root {
+  --anagum-abyss: #060d1d;
+  --anagum-navy: #0a1730;
+  --anagum-signal: #22d3ee;
+  --anagum-mist: #eef3f6;
+  --anagum-line: #d8e2e9;
+  --anagum-ink: #0c1a26;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: #fff;
+  color: var(--anagum-ink);
+}
+
+::selection {
+  background: var(--anagum-navy);
+  color: #fff;
+}
+
+/* Visible keyboard focus everywhere, including on dark bands. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--anagum-signal);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+/* ---- Dark bands: navy field with a faint survey grid. The grid is drawn
+   in code (linear-gradients), so it adds no image requests and stays
+   inside the style-src 'self' policy. ---- */
+.band-dark {
+  background-color: var(--anagum-abyss);
+  background-image:
+    linear-gradient(to right, rgb(148 197 255 / 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(148 197 255 / 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  color: #f2f7fa;
+}
+
+.band-dark ::selection {
+  background: var(--anagum-signal);
+  color: var(--anagum-abyss);
+}
+
+/* Thin rule used to separate editorial rows. */
+.rule {
+  border-color: var(--anagum-line);
+}
+
+/* ---- Agent trace panel (home hero signature). Content is fully present
+   in the HTML; site.js only orchestrates the stepped reveal. Without JS
+   the finished transcript simply shows. ---- */
+.trace {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  background: rgb(4 10 24 / 0.86);
+  border: 1px solid rgb(148 197 255 / 0.22);
+  border-radius: 0.625rem;
+  box-shadow: 0 24px 70px -28px rgb(0 0 0 / 0.75);
+  overflow: hidden;
+}
+
+.trace-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid rgb(148 197 255 / 0.16);
+  color: #9db4c8;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.trace-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background: rgb(148 197 255 / 0.25);
+}
+
+.trace-dot.live {
+  background: var(--anagum-signal);
+}
+
+.trace-body {
+  padding: 1rem 1.125rem 1.125rem;
+  display: grid;
+  gap: 0.625rem;
+}
+
+.trace-step {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.trace-agent {
+  color: var(--anagum-signal);
+  white-space: nowrap;
+}
+
+.trace-text {
+  color: #d7e4ee;
+}
+
+.trace-text .src {
+  color: var(--anagum-abyss);
+  background: #b9e9f5;
+  border-radius: 0.25rem;
+  padding: 0 0.375rem;
+  margin-left: 0.375rem;
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+
+.trace-verdict {
+  margin-top: 0.375rem;
+  border-top: 1px dashed rgb(148 197 255 / 0.25);
+  padding-top: 0.75rem;
+  color: #9db4c8;
+}
+
+.trace-verdict strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.trace-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.05em;
+  margin-left: 0.25rem;
+  vertical-align: -0.15em;
+  background: var(--anagum-signal);
+}
+
+/* ---- Framed photography: one navy grade so stock imagery sits in the
+   brand instead of beside it. ---- */
+.framed {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-box, 0.75rem);
+  border: 1px solid rgb(148 197 255 / 0.18);
+}
+
+.framed img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.framed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(160deg, rgb(10 23 48 / 0.34), rgb(10 23 48 / 0.08) 55%, rgb(34 211 238 / 0.10));
+}
+
+.framed-light {
+  border: 1px solid var(--anagum-line);
+}
+
+.framed-light::after {
+  background: linear-gradient(160deg, rgb(10 23 48 / 0.20), transparent 60%);
+}
+
+/* ---- Editorial solution rows (replaces the boxy card grid). ---- */
+.solution-row {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--anagum-line);
+}
+
+@media (min-width: 768px) {
+  .solution-row {
+    grid-template-columns: 11rem 1fr auto;
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+}
+
+.solution-row:last-child {
+  border-bottom: 1px solid var(--anagum-line);
+}
+
+.solution-kicker {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+
+/* Stat numerals stay tabular so counters do not jitter. */
+.stat-number {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Primary CTAs get a subtle magnetic pull in site.js (pointer-fine only).
+   The transition covers the snap-back; GSAP sets transform during drag. */
+[data-magnet] {
+  transition: transform 0.25s ease-out;
+  will-change: transform;
+}
+
+/* Caret blink and smooth scrolling are motion: both yield to the
+   reduced-motion preference. */
+.trace-caret {
+  animation: trace-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes trace-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trace-caret {
+    animation: none;
+  }
+
+  [data-magnet] {
+    transition: none;
   }
 }

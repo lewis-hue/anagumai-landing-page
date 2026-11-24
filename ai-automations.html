@@ -7,7 +7,7 @@
   <meta name="description" content="Anagum AI builds AI workflow automations that clear triage, reporting and copy-paste: document pipelines, CRM enrichment and scheduled agents with audit trails.">
   <link rel="canonical" href="https://www.anagumai.com/ai-automations">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#0c4f5c">
+  <meta name="theme-color" content="#060d1d">
   <meta property="og:site_name" content="Anagum AI">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="AI Workflow Automations | Anagum AI Agency">
@@ -62,24 +62,25 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-neutral focus:text-neutral-content focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 
-  <header class="sticky top-0 z-40 bg-base-100 border-b border-base-300">
+  <header class="sticky top-0 z-40 bg-base-100/90 backdrop-blur border-b border-base-300">
     <nav class="navbar max-w-6xl mx-auto px-6" aria-label="Main">
       <div class="navbar-start">
         <div class="dropdown md:hidden">
           <button tabindex="0" class="btn btn-ghost btn-square" aria-label="Open menu">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
           </button>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 border border-base-300">
-            <li><a href="/#services">Solutions</a></li>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56 border border-base-300">
+            <li><a href="/">Home</a></li>
+            <li><a href="/ai-agents">AI agents</a></li>
+            <li><a href="/ai-automations" aria-current="page">Automations</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/careers">Careers</a></li>
-            <li><a href="/#faq">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
@@ -90,117 +91,136 @@
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1 font-medium">
-          <li><a href="/#services">Solutions</a></li>
+          <li><a href="/ai-agents">AI agents</a></li>
+          <li><a href="/ai-automations" aria-current="page">Automations</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/careers">Careers</a></li>
-          <li><a href="/#faq">FAQ</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn btn-primary btn-sm hidden sm:inline-flex" href="mailto:sales@anagumai.com?subject=Project%20enquiry%20for%20Anagum%20AI">Contact sales</a>
+        <a class="btn btn-primary btn-sm hidden sm:inline-flex" href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a scoping call</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="border-b border-base-300">
+    <section class="band-dark" data-hero>
       <div class="max-w-6xl mx-auto px-6 py-12 lg:py-16">
         <nav aria-label="Breadcrumb">
-          <ol class="flex flex-wrap items-center gap-2 text-sm text-base-content/60">
-            <li><a class="link link-hover" href="/">Home</a></li>
+          <ol class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+            <li><a class="underline decoration-slate-500/50 underline-offset-4 hover:text-slate-200" href="/">Home</a></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page" class="text-base-content">AI Workflow Automations</li>
+            <li aria-current="page" class="text-slate-200">AI Workflow Automations</li>
           </ol>
         </nav>
-        <p class="pt-6 text-xs font-bold tracking-widest text-primary pb-4">AI AUTOMATION SERVICES</p>
-        <h1 class="text-3xl lg:text-5xl font-extrabold tracking-tight text-balance">AI workflow automations that clear the busywork.</h1>
-        <p class="pt-5 text-lg text-base-content/70 max-w-3xl">Triage queues, hand-built reports, copy-paste between tools that never agree. Anagum AI automates the repetitive workflows eating your team's week, with audit trails and human review built in.</p>
-        <div class="flex flex-wrap items-center gap-4 pt-6">
-          <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Automation%20project%20enquiry%20for%20Anagum%20AI">Discuss your workflow</a>
-          <a class="link link-primary font-semibold" href="/contact">Or book a scoping call &#8594;</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-b border-base-300">
-      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">What we automate</h2>
-        <p class="pt-3 pb-10 text-lg text-base-content/70 max-w-2xl">Four automation patterns cover most of the busywork we see. Each ships as a production system, not a brittle script.</p>
-        <div class="grid gap-10 lg:grid-cols-5 items-start">
-          <img src="/images/developers.jpg" alt="Two developers reviewing code on a monitor" width="1600" height="1067" loading="lazy" class="w-full rounded-box shadow-lg lg:col-span-2">
-          <div class="grid gap-5 sm:grid-cols-2 lg:col-span-3">
-            <article class="card bg-base-100 border border-base-300">
-              <div class="card-body">
-                <p class="text-sm font-bold text-primary">01</p>
-                <h3 class="card-title text-lg">Document &amp; data pipelines</h3>
-                <p class="text-base-content/70">Intake documents, extract the facts that matter, validate them and route them, with the source always one click away.</p>
-              </div>
-            </article>
-            <article class="card bg-base-100 border border-base-300">
-              <div class="card-body">
-                <p class="text-sm font-bold text-primary">02</p>
-                <h3 class="card-title text-lg">CRM &amp; sales enrichment</h3>
-                <p class="text-base-content/70">Keep records complete and current automatically: enrichment, dedupe, follow-up drafting and handoffs that never drop.</p>
-              </div>
-            </article>
-            <article class="card bg-base-100 border border-base-300">
-              <div class="card-body">
-                <p class="text-sm font-bold text-primary">03</p>
-                <h3 class="card-title text-lg">Reporting automation</h3>
-                <p class="text-base-content/70">One version of the numbers, generated on schedule from live systems, reviewed by a human before anything goes out.</p>
-              </div>
-            </article>
-            <article class="card bg-base-100 border border-base-300">
-              <div class="card-body">
-                <p class="text-sm font-bold text-primary">04</p>
-                <h3 class="card-title text-lg">Scheduled AI agents</h3>
-                <p class="text-base-content/70">Agents that watch queues, inboxes and data feeds around the clock, act within guardrails, and escalate the rest.</p>
-              </div>
-            </article>
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center pt-8">
+          <div data-hero-copy>
+            <h1 class="text-4xl lg:text-5xl font-black tracking-tight text-balance text-white">AI workflow automations that clear the busywork.</h1>
+            <p class="pt-5 text-lg text-slate-300 max-w-xl">Triage queues, hand-built reports, copy-paste between tools that never agree. Anagum AI automates the repetitive workflows eating your team's week, with audit trails and human review built in.</p>
+            <div class="flex flex-wrap items-center gap-4 pt-8">
+              <a class="btn btn-accent" data-magnet href="mailto:sales@anagumai.com?subject=Automation%20project%20enquiry%20for%20Anagum%20AI">Discuss your workflow</a>
+              <a class="font-semibold text-cyan-200 underline decoration-cyan-200/40 underline-offset-4 hover:decoration-cyan-200" href="/contact">Or book a scoping call</a>
+            </div>
+          </div>
+          <div class="trace" data-trace role="img" aria-label="Illustrated automation run: the watcher scans the support queue overnight, the reconciler matches 31 tickets to known issues, the reporter drafts the morning brief with four cited sources, ready for human sign-off.">
+            <div class="trace-bar"><span class="trace-dot live" aria-hidden="true"></span><span class="trace-dot" aria-hidden="true"></span><span class="trace-dot" aria-hidden="true"></span><span class="pl-2">agent-run · nightly-queue</span></div>
+            <div class="trace-body" aria-hidden="true">
+              <div class="trace-step"><span class="trace-agent">watcher</span><span class="trace-text">Scanned 148 tickets overnight<span class="src">queue</span></span></div>
+              <div class="trace-step"><span class="trace-agent">reconciler</span><span class="trace-text">Matched 31 to known issues<span class="src">runbook R-7</span></span></div>
+              <div class="trace-step"><span class="trace-agent">reporter</span><span class="trace-text">Drafted the morning brief<span class="src">4 sources</span></span></div>
+              <p class="trace-verdict"><strong>Verified brief.</strong> Waiting on human sign-off<span class="trace-caret"></span></p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="border-b border-base-300">
+    <section>
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Run safely in production</h2>
-        <p class="pt-4 text-lg text-base-content/70 max-w-3xl">Automation without oversight is a liability. Every workflow we ship can explain what it did, stays inside scoped data boundaries, and pauses for human review on consequential decisions.</p>
-        <div class="flex flex-wrap gap-2 pt-6">
-          <span class="badge badge-outline badge-lg">Audit trails on every run</span>
-          <span class="badge badge-outline badge-lg">Human-review checkpoints</span>
-          <span class="badge badge-outline badge-lg">Scoped data access</span>
-          <span class="badge badge-outline badge-lg">Failure alerts and retries</span>
+        <div data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">What we automate</h2>
+          <p class="pt-3 text-lg text-base-content/70 max-w-2xl">Four automation patterns cover most of the busywork we see. Each ships as a production system, not a brittle script.</p>
         </div>
-        <div class="pt-7">
-          <a class="link link-primary font-semibold" href="/ai-agents">See how our AI agents stay trustworthy &#8594;</a>
+        <div class="pt-6" data-reveal>
+          <article class="solution-row">
+            <p class="solution-kicker">Pipelines</p>
+            <div>
+              <h3 class="text-xl font-bold">Document and data pipelines</h3>
+              <p class="pt-1 text-base-content/70">Intake documents, extract the facts that matter, validate them and route them, with the source always one click away.</p>
+            </div>
+            <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/ai-agents">Add grounded agents</a></p>
+          </article>
+          <article class="solution-row">
+            <p class="solution-kicker">CRM</p>
+            <div>
+              <h3 class="text-xl font-bold">CRM and sales enrichment</h3>
+              <p class="pt-1 text-base-content/70">Keep records complete and current automatically: enrichment, dedupe, follow-up drafting and handoffs that never drop.</p>
+            </div>
+            <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/contact">Scope your CRM</a></p>
+          </article>
+          <article class="solution-row">
+            <p class="solution-kicker">Reporting</p>
+            <div>
+              <h3 class="text-xl font-bold">Reporting automation</h3>
+              <p class="pt-1 text-base-content/70">One version of the numbers, generated on schedule from live systems, reviewed by a human before anything goes out.</p>
+            </div>
+            <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/contact">Fix your reporting</a></p>
+          </article>
+          <article class="solution-row">
+            <p class="solution-kicker">Agents</p>
+            <div>
+              <h3 class="text-xl font-bold">Scheduled AI agents</h3>
+              <p class="pt-1 text-base-content/70">Agents that watch queues, inboxes and data feeds around the clock, act within guardrails, and escalate the rest.</p>
+            </div>
+            <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/ai-agents">How agents stay reliable</a></p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="bg-base-200">
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Start with one workflow</h2>
-        <p class="pt-4 text-lg text-base-content/70 max-w-2xl">Pick the single most painful manual process. We scope it, automate it, and prove the pattern, then roll it out wider.</p>
-        <div class="flex flex-wrap items-center gap-4 pt-6">
-          <a class="btn btn-primary" href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a scoping call</a>
-          <a class="link link-primary font-semibold" href="/contact">All contact options &#8594;</a>
+        <div class="max-w-3xl" data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Run safely in production</h2>
+          <p class="pt-4 text-lg text-base-content/70">Automation without oversight is a liability. Every workflow we ship can explain what it did, stays inside scoped data boundaries, and pauses for human review on consequential decisions.</p>
+          <div class="flex flex-wrap gap-2 pt-6">
+            <span class="badge badge-outline badge-lg">Audit trails on every run</span>
+            <span class="badge badge-outline badge-lg">Human-review checkpoints</span>
+            <span class="badge badge-outline badge-lg">Scoped data access</span>
+            <span class="badge badge-outline badge-lg">Failure alerts and retries</span>
+          </div>
+          <div class="pt-7">
+            <a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary" href="/ai-agents">See how our AI agents stay trustworthy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-dark">
+      <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
+        <div class="max-w-2xl" data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight text-white">Start with one workflow</h2>
+          <p class="pt-4 text-lg text-slate-300">Pick the single most painful manual process. We scope it, automate it, and prove the pattern, then roll it out wider.</p>
+          <div class="flex flex-wrap items-center gap-4 pt-8">
+            <a class="btn btn-accent" data-magnet href="mailto:sales@anagumai.com?subject=Scoping%20call%20request%20for%20Anagum%20AI">Book a scoping call</a>
+            <a class="font-semibold text-cyan-200 underline decoration-cyan-200/40 underline-offset-4 hover:decoration-cyan-200" href="/contact">All contact options</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer bg-neutral text-neutral-content p-10 max-w-none">
-    <div class="max-w-6xl mx-auto px-6 grid gap-10 md:grid-cols-4 w-full">
-      <nav class="grid gap-2 content-start justify-items-start">
+  <footer class="bg-neutral text-neutral-content">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
+      <nav class="grid gap-3 content-start justify-items-start" aria-label="Footer">
         <a href="/" class="flex items-center gap-2.5" aria-label="Anagum AI home">
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-10 w-10 rounded-lg object-cover">
           <span class="text-lg font-extrabold">Anagum AI</span>
         </a>
-        <p class="text-sm text-neutral-content/70 max-w-xs">AI agency building solutions.</p>
+        <p class="text-sm text-neutral-content/70 max-w-xs">An AI agency building systems your team can verify.</p>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer site">
         <h3 class="footer-title">Site</h3>
         <a class="link link-hover" href="/">Home</a>
         <a class="link link-hover" href="/about">About</a>
@@ -208,22 +228,28 @@
         <a class="link link-hover" href="/#faq">FAQ</a>
         <a class="link link-hover" href="/contact">Contact</a>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer services">
         <h3 class="footer-title">Services</h3>
-        <a class="link link-hover" href="/ai-automations">AI Automations</a>
         <a class="link link-hover" href="/ai-agents">AI Agents &amp; Systems</a>
+        <a class="link link-hover" href="/ai-automations">AI Automations</a>
         <a class="link link-hover" href="/#services">All solutions</a>
       </nav>
-      <nav class="grid gap-2 content-start justify-items-start">
+      <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer contact">
         <h3 class="footer-title">Contact</h3>
         <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
         <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
       </nav>
     </div>
-    <div class="max-w-6xl mx-auto px-6 w-full flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60 border-t border-neutral-content/20 pt-6">
-      <span>© 2026 Anagum AI</span>
+    <div class="border-t border-neutral-content/20">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60">
+        <span>© 2026 Anagum AI</span>
+        <span>Automations, agents, web and mobile.</span>
+      </div>
     </div>
   </footer>
+  <script src="/js/gsap.min.js" defer></script>
+  <script src="/js/ScrollTrigger.min.js" defer></script>
+  <script src="/js/site.js" defer></script>
 </body>
 </html>
