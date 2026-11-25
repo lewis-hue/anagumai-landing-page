@@ -85,6 +85,11 @@
     if (hasTrigger) {
       initReveals(gsap);
       initCounters(gsap, true);
+      // Images and webfonts shift section positions after first paint;
+      // re-measure once everything lands so mobile triggers cannot stick.
+      window.addEventListener("load", function () {
+        window.ScrollTrigger.refresh();
+      });
     } else {
       initCounters(gsap, false);
     }
