@@ -10,7 +10,7 @@
       name: "THE EYE",
       tagline: "AI research worksuite your team can check",
       description:
-        "Source-linked research scans, cited AI agents with human approval gates, team workspaces, and an auditable finance ledger — academic, medical, and finance research in one place.",
+        "Source-linked research scans, cited AI agents with human approval gates, team workspaces, and an auditable finance ledger: academic, medical, and finance research in one place.",
       platforms: ["Web"],
       status: "Live",
       url: "https://app.anagumai.com",

@@ -24,7 +24,7 @@
       if (!stage) { status.textContent = "Please choose a project stage."; return; }
       if (!brief) { status.textContent = "Please add a few lines about the project."; return; }
       var to = category === "Product Support / Partnership" ? "support@anagumai.com" : "sales@anagumai.com";
-      var subject = "Project inquiry: " + category + " \u2014 " + name;
+      var subject = "Project inquiry: " + category + " - " + name;
       var body = "Name: " + name + "\nEmail: " + email +
         (company ? "\nCompany: " + company : "") +
         "\nCategory: " + category + "\nStage: " + stage +
