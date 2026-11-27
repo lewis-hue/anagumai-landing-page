@@ -28,7 +28,7 @@
     "name": "Anagum AI",
     "url": "https://www.anagumai.com/",
     "logo": "https://www.anagumai.com/images/logo.jpg",
-    "description": "AI agency building AI automations, AI agents, web platforms and mobile apps for companies.",
+    "description": "Software development company and product studio building custom web platforms, mobile apps, workflow automations, and verifiable AI systems.",
     "email": "sales@anagumai.com",
     "sameAs": ["https://www.linkedin.com/company/anagum-ai/"],
     "contactPoint": [
@@ -77,8 +77,15 @@
           </button>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56 border border-base-300">
             <li><a href="/">Home</a></li>
-            <li><a href="/ai-agents" aria-current="page">AI agents</a></li>
-            <li><a href="/ai-automations">Automations</a></li>
+            <li><details><summary>Services</summary>
+              <ul>
+                <li><a href="/solutions">All services</a></li>
+                <li><a href="/services/web-mobile">Web & Mobile</a></li>
+                <li><a href="/ai-agents" aria-current="page">Verifiable AI Systems</a></li>
+                <li><a href="/ai-automations">Workflow Automations</a></li>
+              </ul>
+            </details></li>
+            <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/careers">Careers</a></li>
             <li><a href="/contact">Contact</a></li>
@@ -91,8 +98,15 @@
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1 font-medium">
-          <li><a href="/ai-agents" aria-current="page">AI agents</a></li>
-          <li><a href="/ai-automations">Automations</a></li>
+          <li><details><summary>Services</summary>
+            <ul class="p-2 shadow bg-base-100 rounded-box w-64 border border-base-300">
+              <li><a href="/solutions">All services</a></li>
+              <li><a href="/services/web-mobile">Web & Mobile Engineering</a></li>
+              <li><a href="/ai-agents" aria-current="page">Verifiable AI Systems</a></li>
+              <li><a href="/ai-automations">Workflow Automations</a></li>
+            </ul>
+          </details></li>
+          <li><a href="/products">Products</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/careers">Careers</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -140,7 +154,7 @@
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
         <div data-reveal>
           <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">How our agents stay trustworthy</h2>
-          <p class="pt-3 text-lg text-base-content/70 max-w-2xl">Four guardrails turn a fluent model into a system your team can rely on for real decisions.</p>
+          <p class="pt-3 text-lg text-base-content/70 max-w-2xl">Our agents are deterministic-wrapped software systems, not fragile prompts. Five engineering disciplines turn a fluent model into a system your team can rely on for real decisions.</p>
         </div>
         <div class="pt-6" data-reveal>
           <article class="solution-row">
@@ -174,6 +188,14 @@
               <p class="pt-1 text-base-content/70">Drafts, extractions and flagged items queue for human sign-off before anything ships to a client or a system of record.</p>
             </div>
             <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/contact">Talk to an engineer</a></p>
+          </article>
+          <article class="solution-row">
+            <p class="solution-kicker">Observability</p>
+            <div>
+              <h3 class="text-xl font-bold">Evaluation &amp; observability</h3>
+              <p class="pt-1 text-base-content/70">Automated eval suites, hallucination checks, token and latency logging, and audit trails on every run — so agent quality is measured, not hoped for.</p>
+            </div>
+            <p><a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary whitespace-nowrap" href="/contact">Ask about evals</a></p>
           </article>
         </div>
       </div>
@@ -226,7 +248,7 @@
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-10 w-10 rounded-lg object-cover">
           <span class="text-lg font-extrabold">Anagum AI</span>
         </a>
-        <p class="text-sm text-neutral-content/70 max-w-xs">An AI agency building systems your team can verify.</p>
+        <p class="text-sm text-neutral-content/70 max-w-xs">A software development company building production web platforms, mobile apps, and verifiable AI systems.</p>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer site">
         <h3 class="footer-title">Site</h3>
@@ -238,21 +260,25 @@
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer services">
         <h3 class="footer-title">Services</h3>
-        <a class="link link-hover" href="/ai-agents">AI Agents &amp; Systems</a>
-        <a class="link link-hover" href="/ai-automations">AI Automations</a>
-        <a class="link link-hover" href="/#services">All solutions</a>
+        <a class="link link-hover" href="/services/web-mobile">Web &amp; Mobile Development</a>
+        <a class="link link-hover" href="/ai-agents">AI Systems &amp; Agents</a>
+        <a class="link link-hover" href="/ai-automations">Workflow Automations</a>
+        <a class="link link-hover" href="/products">Our Products</a>
+        <a class="link link-hover" href="/solutions">All Solutions</a>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer contact">
         <h3 class="footer-title">Contact</h3>
         <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
         <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
+        <a class="link link-hover" href="/privacy">Privacy Policy</a>
+        <a class="link link-hover" href="/terms">Terms of Service</a>
       </nav>
     </div>
     <div class="border-t border-neutral-content/20">
       <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60">
         <span>© 2026 Anagum AI</span>
-        <span>Automations, agents, web and mobile.</span>
+        <span>Custom web, mobile, and AI software.</span>
       </div>
     </div>
   </footer>

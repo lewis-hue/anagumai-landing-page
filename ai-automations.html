@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Workflow Automations | Anagum AI Agency</title>
+  <title>AI Workflow Automations | Anagum AI</title>
   <meta name="description" content="Anagum AI builds AI workflow automations that clear triage, reporting and copy-paste: document pipelines, CRM enrichment and scheduled agents with audit trails.">
   <link rel="canonical" href="https://www.anagumai.com/ai-automations">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#060d1d">
   <meta property="og:site_name" content="Anagum AI">
   <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="AI Workflow Automations | Anagum AI Agency">
+  <meta property="og:title" content="AI Workflow Automations | Anagum AI">
   <meta property="og:description" content="Document pipelines, CRM enrichment, reporting and scheduled AI agents, automated end to end, with audit trails and human review.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.anagumai.com/ai-automations">
   <meta property="og:image" content="https://www.anagumai.com/images/logo.jpg">
   <meta property="og:image:alt" content="Anagum AI logo">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Workflow Automations | Anagum AI Agency">
+  <meta name="twitter:title" content="AI Workflow Automations | Anagum AI">
   <meta name="twitter:description" content="Document pipelines, CRM enrichment, reporting and scheduled AI agents, automated end to end, with audit trails and human review.">
   <meta name="twitter:image" content="https://www.anagumai.com/images/logo.jpg">
   <meta name="twitter:image:alt" content="Anagum AI logo">
@@ -28,7 +28,7 @@
     "name": "Anagum AI",
     "url": "https://www.anagumai.com/",
     "logo": "https://www.anagumai.com/images/logo.jpg",
-    "description": "AI agency building AI automations, AI agents, web platforms and mobile apps for companies.",
+    "description": "Software development company and product studio building custom web platforms, mobile apps, workflow automations, and verifiable AI systems.",
     "email": "sales@anagumai.com",
     "sameAs": ["https://www.linkedin.com/company/anagum-ai/"],
     "contactPoint": [
@@ -77,8 +77,15 @@
           </button>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56 border border-base-300">
             <li><a href="/">Home</a></li>
-            <li><a href="/ai-agents">AI agents</a></li>
-            <li><a href="/ai-automations" aria-current="page">Automations</a></li>
+            <li><details><summary>Services</summary>
+              <ul>
+                <li><a href="/solutions">All services</a></li>
+                <li><a href="/services/web-mobile">Web & Mobile</a></li>
+                <li><a href="/ai-agents">Verifiable AI Systems</a></li>
+                <li><a href="/ai-automations" aria-current="page">Workflow Automations</a></li>
+              </ul>
+            </details></li>
+            <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/careers">Careers</a></li>
             <li><a href="/contact">Contact</a></li>
@@ -91,8 +98,15 @@
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1 font-medium">
-          <li><a href="/ai-agents">AI agents</a></li>
-          <li><a href="/ai-automations" aria-current="page">Automations</a></li>
+          <li><details><summary>Services</summary>
+            <ul class="p-2 shadow bg-base-100 rounded-box w-64 border border-base-300">
+              <li><a href="/solutions">All services</a></li>
+              <li><a href="/services/web-mobile">Web & Mobile Engineering</a></li>
+              <li><a href="/ai-agents">Verifiable AI Systems</a></li>
+              <li><a href="/ai-automations" aria-current="page">Workflow Automations</a></li>
+            </ul>
+          </details></li>
+          <li><a href="/products">Products</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/careers">Careers</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -183,7 +197,8 @@
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
         <div class="max-w-3xl" data-reveal>
           <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Run safely in production</h2>
-          <p class="pt-4 text-lg text-base-content/70">Automation without oversight is a liability. Every workflow we ship can explain what it did, stays inside scoped data boundaries, and pauses for human review on consequential decisions.</p>
+          <p class="pt-4 text-lg text-base-content/70">Automation without oversight is a liability. Every workflow we ship is resilient backend engineering — webhooks, idempotent background task queues, retry and dead-letter handling, CRM and ERP API integrations, structured schema validation, and runbook documentation. Each run can explain what it did, stays inside scoped data boundaries, and pauses for human review on consequential decisions.</p>
+          <p class="pt-3 text-base-content/70">Automations connect seamlessly into <a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary" href="/services/web-mobile">custom web dashboards and mobile apps</a>, so the work surfaces where your team already operates.</p>
           <div class="flex flex-wrap gap-2 pt-6">
             <span class="badge badge-outline badge-lg">Audit trails on every run</span>
             <span class="badge badge-outline badge-lg">Human-review checkpoints</span>
@@ -218,7 +233,7 @@
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-10 w-10 rounded-lg object-cover">
           <span class="text-lg font-extrabold">Anagum AI</span>
         </a>
-        <p class="text-sm text-neutral-content/70 max-w-xs">An AI agency building systems your team can verify.</p>
+        <p class="text-sm text-neutral-content/70 max-w-xs">A software development company building production web platforms, mobile apps, and verifiable AI systems.</p>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer site">
         <h3 class="footer-title">Site</h3>
@@ -230,21 +245,25 @@
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer services">
         <h3 class="footer-title">Services</h3>
-        <a class="link link-hover" href="/ai-agents">AI Agents &amp; Systems</a>
-        <a class="link link-hover" href="/ai-automations">AI Automations</a>
-        <a class="link link-hover" href="/#services">All solutions</a>
+        <a class="link link-hover" href="/services/web-mobile">Web &amp; Mobile Development</a>
+        <a class="link link-hover" href="/ai-agents">AI Systems &amp; Agents</a>
+        <a class="link link-hover" href="/ai-automations">Workflow Automations</a>
+        <a class="link link-hover" href="/products">Our Products</a>
+        <a class="link link-hover" href="/solutions">All Solutions</a>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer contact">
         <h3 class="footer-title">Contact</h3>
         <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
         <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
+        <a class="link link-hover" href="/privacy">Privacy Policy</a>
+        <a class="link link-hover" href="/terms">Terms of Service</a>
       </nav>
     </div>
     <div class="border-t border-neutral-content/20">
       <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60">
         <span>© 2026 Anagum AI</span>
-        <span>Automations, agents, web and mobile.</span>
+        <span>Custom web, mobile, and AI software.</span>
       </div>
     </div>
   </footer>

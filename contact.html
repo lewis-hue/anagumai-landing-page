@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Anagum AI | Book a 20-Min Scoping Call</title>
-  <meta name="description" content="Talk to Anagum AI about AI automations, agents or custom software. Book a 20-minute scoping call or send a 3-line brief to sales@anagumai.com.">
+  <meta name="description" content="Talk to Anagum AI about custom web platforms, mobile apps or verifiable AI systems. Book a 20-minute scoping call or send a project inquiry to sales@anagumai.com.">
   <link rel="canonical" href="https://www.anagumai.com/contact">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#060d1d">
@@ -28,7 +28,7 @@
     "name": "Anagum AI",
     "url": "https://www.anagumai.com/",
     "logo": "https://www.anagumai.com/images/logo.jpg",
-    "description": "AI agency building AI automations, AI agents, web platforms and mobile apps for companies.",
+    "description": "Software development company and product studio building custom web platforms, mobile apps, workflow automations, and verifiable AI systems.",
     "email": "sales@anagumai.com",
     "sameAs": ["https://www.linkedin.com/company/anagum-ai/"],
     "contactPoint": [
@@ -76,8 +76,15 @@
           </button>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-56 border border-base-300">
             <li><a href="/">Home</a></li>
-            <li><a href="/ai-agents">AI agents</a></li>
-            <li><a href="/ai-automations">Automations</a></li>
+            <li><details><summary>Services</summary>
+              <ul>
+                <li><a href="/solutions">All services</a></li>
+                <li><a href="/services/web-mobile">Web & Mobile</a></li>
+                <li><a href="/ai-agents">Verifiable AI Systems</a></li>
+                <li><a href="/ai-automations">Workflow Automations</a></li>
+              </ul>
+            </details></li>
+            <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/careers">Careers</a></li>
             <li><a href="/contact" aria-current="page">Contact</a></li>
@@ -90,8 +97,15 @@
       </div>
       <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1 font-medium">
-          <li><a href="/ai-agents">AI agents</a></li>
-          <li><a href="/ai-automations">Automations</a></li>
+          <li><details><summary>Services</summary>
+            <ul class="p-2 shadow bg-base-100 rounded-box w-64 border border-base-300">
+              <li><a href="/solutions">All services</a></li>
+              <li><a href="/services/web-mobile">Web & Mobile Engineering</a></li>
+              <li><a href="/ai-agents">Verifiable AI Systems</a></li>
+              <li><a href="/ai-automations">Workflow Automations</a></li>
+            </ul>
+          </details></li>
+          <li><a href="/products">Products</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/careers">Careers</a></li>
           <li><a href="/contact" aria-current="page">Contact</a></li>
@@ -115,7 +129,7 @@
         </nav>
         <div class="max-w-3xl pt-8" data-hero-copy>
           <h1 class="text-4xl lg:text-5xl font-black tracking-tight text-balance text-white">Contact Anagum AI</h1>
-          <p class="pt-5 text-lg text-slate-300">New project, support request or just a question about AI automations and agents. Pick the channel that fits and you will hear from a human, not a bot queue.</p>
+          <p class="pt-5 text-lg text-slate-300">Start a client project, get support for an Anagum AI app, or ask about custom web platforms, mobile apps and verifiable AI. Pick the channel that fits and you will hear from a human, not a bot queue.</p>
         </div>
       </div>
     </section>
@@ -154,6 +168,72 @@
       </div>
     </section>
 
+    <section id="scope">
+      <div class="max-w-3xl mx-auto px-6 py-16 lg:py-20">
+        <div data-reveal>
+          <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Start a client project</h2>
+          <p class="pt-3 text-lg text-base-content/70">Tell us what you want to build. Project inquiries go to <a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary" href="mailto:sales@anagumai.com">sales@anagumai.com</a>; users of Anagum AI apps get help at <a class="font-semibold text-secondary underline decoration-secondary/30 underline-offset-4 hover:decoration-secondary" href="mailto:support@anagumai.com">support@anagumai.com</a>.</p>
+        </div>
+        <div class="card bg-base-100 border border-base-300 shadow-sm mt-8" data-reveal>
+          <div class="card-body">
+            <form id="scope-form" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Full name</legend>
+                  <input class="input w-full" type="text" id="scope-name" name="name" autocomplete="name" maxlength="120" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Work email</legend>
+                  <input class="input w-full" type="email" id="scope-email" name="email" autocomplete="email" maxlength="120" required>
+                </fieldset>
+                <fieldset class="fieldset sm:col-span-2">
+                  <legend class="fieldset-legend">Company / Organization <span class="font-normal text-base-content/60">(optional)</span></legend>
+                  <input class="input w-full" type="text" id="scope-company" name="company" autocomplete="organization" maxlength="120">
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Project category</legend>
+                  <select class="select w-full" id="scope-category" name="category" required>
+                    <option value="">Choose a category</option>
+                    <option value="Custom Web Platform">Custom Web Platform</option>
+                    <option value="iOS / Android Mobile App">iOS / Android Mobile App</option>
+                    <option value="Verifiable AI System / Agent">Verifiable AI System / Agent</option>
+                    <option value="Workflow Automation & Integration">Workflow Automation &amp; Integration</option>
+                    <option value="Product Support / Partnership">Product Support / Partnership</option>
+                  </select>
+                </fieldset>
+                <fieldset class="fieldset">
+                  <legend class="fieldset-legend">Project stage</legend>
+                  <select class="select w-full" id="scope-stage" name="stage" required>
+                    <option value="">Choose a stage</option>
+                    <option value="New 0-to-1 Build">New 0-to-1 Build</option>
+                    <option value="Modernize / Replace Legacy Tool">Modernize / Replace Legacy Tool</option>
+                    <option value="Add AI to Existing Software">Add AI to Existing Software</option>
+                    <option value="Ongoing Engineering Support">Ongoing Engineering Support</option>
+                  </select>
+                </fieldset>
+                <fieldset class="fieldset sm:col-span-2">
+                  <legend class="fieldset-legend">NDA required first?</legend>
+                  <div class="flex gap-6 pt-1">
+                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="nda" value="No" class="radio radio-primary" checked> No</label>
+                    <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="nda" value="Yes" class="radio radio-primary"> Yes</label>
+                  </div>
+                </fieldset>
+                <fieldset class="fieldset sm:col-span-2">
+                  <legend class="fieldset-legend">Brief description</legend>
+                  <textarea class="textarea w-full" id="scope-brief" name="brief" rows="4" maxlength="3000" placeholder="What hurts, what systems are involved, and when you need it." required></textarea>
+                </fieldset>
+              </div>
+              <p id="scope-status" class="pt-3 text-sm text-base-content/70" role="status" aria-live="polite"></p>
+              <div class="card-actions justify-start pt-4">
+                <button type="button" id="scope-submit" class="btn btn-primary" data-magnet>Send project inquiry</button>
+              </div>
+              <p class="pt-3 text-sm text-base-content/60">Prefer email? Write to <a class="underline underline-offset-4" href="mailto:sales@anagumai.com?subject=Project%20inquiry%20for%20Anagum%20AI">sales@anagumai.com</a>, or <a class="underline underline-offset-4" href="mailto:support@anagumai.com?subject=Support%20request%20for%20Anagum%20AI">support@anagumai.com</a> for product support.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-base-200">
       <div class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
         <div data-reveal>
@@ -179,7 +259,7 @@
           <img src="/images/logo-mark.jpg" alt="" width="370" height="340" class="h-10 w-10 rounded-lg object-cover">
           <span class="text-lg font-extrabold">Anagum AI</span>
         </a>
-        <p class="text-sm text-neutral-content/70 max-w-xs">An AI agency building systems your team can verify.</p>
+        <p class="text-sm text-neutral-content/70 max-w-xs">A software development company building production web platforms, mobile apps, and verifiable AI systems.</p>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer site">
         <h3 class="footer-title">Site</h3>
@@ -191,26 +271,31 @@
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer services">
         <h3 class="footer-title">Services</h3>
-        <a class="link link-hover" href="/ai-agents">AI Agents &amp; Systems</a>
-        <a class="link link-hover" href="/ai-automations">AI Automations</a>
-        <a class="link link-hover" href="/#services">All solutions</a>
+        <a class="link link-hover" href="/services/web-mobile">Web &amp; Mobile Development</a>
+        <a class="link link-hover" href="/ai-agents">AI Systems &amp; Agents</a>
+        <a class="link link-hover" href="/ai-automations">Workflow Automations</a>
+        <a class="link link-hover" href="/products">Our Products</a>
+        <a class="link link-hover" href="/solutions">All Solutions</a>
       </nav>
       <nav class="grid gap-2 content-start justify-items-start" aria-label="Footer contact">
         <h3 class="footer-title">Contact</h3>
         <a class="link link-hover" href="mailto:sales@anagumai.com">sales@anagumai.com</a>
         <a class="link link-hover" href="mailto:support@anagumai.com">support@anagumai.com</a>
         <a class="link link-hover" href="https://www.linkedin.com/company/anagum-ai/" rel="noopener">Anagum AI on LinkedIn</a>
+        <a class="link link-hover" href="/privacy">Privacy Policy</a>
+        <a class="link link-hover" href="/terms">Terms of Service</a>
       </nav>
     </div>
     <div class="border-t border-neutral-content/20">
       <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-x-6 gap-y-2 justify-between text-sm text-neutral-content/60">
         <span>© 2026 Anagum AI</span>
-        <span>Automations, agents, web and mobile.</span>
+        <span>Custom web, mobile, and AI software.</span>
       </div>
     </div>
   </footer>
   <script src="/js/gsap.min.js" defer></script>
   <script src="/js/ScrollTrigger.min.js" defer></script>
   <script src="/js/site.js" defer></script>
+  <script src="/js/scope.js" defer></script>
 </body>
 </html>

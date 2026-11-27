@@ -4,16 +4,20 @@
 
 Company site for Anagum AI, served at https://www.anagumai.com.
 
-Static multi-page site: `index.html`, `about.html`, `contact.html`,
+Static multi-page site: `index.html`, `solutions.html`,
+`services/web-mobile.html`, `about.html`, `contact.html`,
 `careers.html`, `apply-senior-ai-engineer.html`,
 `apply-full-stack-engineer.html`, `apply-product-designer.html`,
-`ai-automations.html`, `ai-agents.html`, compiled `styles.css`,
-`apply.js`, `js/` (vendored GSAP + ScrollTrigger 3.12.5 plus the
-first-party `site.js` motion layer), `favicon.ico`,
+`ai-automations.html`, `ai-agents.html`, `products.html`,
+`products/the-eye.html`, `privacy.html`, `terms.html`, compiled
+`styles.css`, `apply.js`, `js/` (vendored GSAP + ScrollTrigger 3.12.5
+plus the first-party `site.js` motion layer, `scope.js` contact-form
+composer and `products.js` catalog), `favicon.ico`,
 `apple-touch-icon.png`, `robots.txt`, `sitemap.xml`, `images/`. No form
-backend. Photos other than the logo are by Annie Spratt and Sigmund via
-Unsplash. Every page shares the same header nav and footer; keep them
-in sync when editing.
+backend: the contact form composes a `mailto:` inquiry, job
+applications go to Basin. Photos other than the logo are by Annie
+Spratt and Sigmund via Unsplash. Every page shares the same header nav
+and footer; keep them in sync when editing.
 
 Motion runs on GSAP, vendored into `js/` because the site's enforcing
 Content-Security-Policy (`deploy/contabo/Caddyfile` in `the-eye`) only
